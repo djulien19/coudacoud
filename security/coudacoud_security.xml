@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--
+
+        Création des groupes spécifiques pour coudàcoud
+
+        Utilisateur
+
+        -->
+
+
+        <record id="community.group_coudacoud" model="res.groups">
+            <field name="name">Utilisateur CoudàCoud</field>
+            <field name="implied_ids" eval="[(4,ref('account_wallet.group_account_wallet_user'))]"/>
+        </record>
+
+
+    </data>
+</openerp>
